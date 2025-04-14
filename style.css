@@ -1,0 +1,123 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos do corpo */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Estilos do Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .titulo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Estilos do Main */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;Filme: Homens de Coragem 
+    
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  section p {
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos do Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  /* Layout Responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    header .titulo h1 {
+        font-size: 1.5rem;
+    }
+  
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+  
+    section h2 {
+        font-size: 1.5rem;
+    }
+  
+    section p {
+        font-size: 0.95rem;
+    }
+  }
